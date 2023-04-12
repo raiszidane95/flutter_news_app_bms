@@ -1,16 +1,12 @@
-# flutter_news_app_bms
+# Flutter News App
 
-A new Flutter project.
+A Flutter project implements API from Newsapi.org
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is implements Get API from [Newsapi.org](newsapi.org),
+which do Get API to show Source News, Articles, And Category articles.
 
-A few resources to get you started if this is your first Flutter project:
+This project also using many Package to provide all needs in App flow and method. Its using GetX for state management, GetConnect to consume data from API. This Projects also implement design pattern with Clean Architecture. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In this below are Screenshoot of News App 
