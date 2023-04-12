@@ -15,7 +15,6 @@ class SourcesController extends GetxController {
   @override
   void onInit() {
     getSources();
-    print(args);
     super.onInit();
   }
 
@@ -24,12 +23,10 @@ class SourcesController extends GetxController {
       isLoading.toggle();
       category.value = args;
       final source = await _getSourcesUseCase.call(category: category.value);
-      print(source.status);
       listSources.value = source.sources!;
       isLoading.toggle();
     } catch (e) {
       isLoading.toggle();
-      print('Haloo ini catch controller');
       SnackbarUtil.showError(message: e.toString());
     }
   }

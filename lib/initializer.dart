@@ -40,7 +40,6 @@ class Initializer {
     final connect = GetConnect();
     final url = ConfigEnvironments.getEnvironments()['url'];
     connect.httpClient.baseUrl = url;
-    print(url);
     Get.put(connect);
   }
 }

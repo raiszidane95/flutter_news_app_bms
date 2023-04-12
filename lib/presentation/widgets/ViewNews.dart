@@ -16,10 +16,8 @@ class ViewNews extends StatelessWidget {
           backgroundColor: Colors.red,
           centerTitle: true,
           title: const Text("News")),
-      body: Container(
-          child: WebView(
-              initialUrl: newsUrl,
-              javascriptMode: JavascriptMode.unrestricted)),
+      body: WebView(
+          initialUrl: newsUrl, javascriptMode: JavascriptMode.unrestricted),
     );
   }
 }

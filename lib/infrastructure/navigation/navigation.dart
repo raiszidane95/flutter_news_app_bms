@@ -1,12 +1,10 @@
 import 'package:get/get.dart';
 
 import '../../presentation/bindings/articles_binding.dart';
-import '../../presentation/bindings/cart/cart_binding.dart';
 import '../../presentation/bindings/home_binding.dart';
 import '../../presentation/bindings/search_binding.dart';
 import '../../presentation/bindings/source_binding.dart';
 import '../../presentation/pages/article_page.dart';
-import '../../presentation/pages/cart/cart_page.dart';
 import '../../presentation/pages/home_page.dart';
 import '../../presentation/pages/search_result_page.dart';
 import '../../presentation/pages/source_page.dart';
@@ -33,11 +31,6 @@ class Nav {
       name: Routes.SEARCHRESULT,
       page: () => SearchResultPage(),
       binding: SearchBinding(),
-    ),
-    GetPage(
-      name: Routes.CART,
-      page: () => const CartPage(),
-      binding: CartBinding(),
     ),
   ];
 }

@@ -15,11 +15,9 @@ class RemoteNewsDataSource {
     String url = '/everything?page=$page&pageSize=10&';
     url += sources == '' ? '' : 'sources=$sources&';
     url += apiKey;
-    print('Print dari searchKey : $searchKey');
     if (searchKey != '') {
       url = "/everything?pageSize=10&page=$page&q=$searchKey&$apiKey";
     }
-    print(url);
 
     final response = await _connect.get(
       url,

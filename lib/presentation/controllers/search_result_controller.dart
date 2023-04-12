@@ -19,7 +19,7 @@ class SearchResultController extends GetxController {
   @override
   void onInit() {
     getNews();
-    scrollController = new ScrollController()..addListener(_scrollListener);
+    scrollController = ScrollController()..addListener(_scrollListener);
     super.onInit();
   }
 

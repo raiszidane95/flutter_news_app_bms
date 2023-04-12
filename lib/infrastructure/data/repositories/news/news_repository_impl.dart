@@ -10,7 +10,6 @@ class NewsRepositoryImpl implements NewsRepository {
   @override
   Future<NewsModel> getListNews(
       {required int page, required String sources, String? searchKey}) {
-    print('Print searchKey di repo_impl : $searchKey');
     return _remoteNewsDataSource.getListNews(
         page: page, sources: sources, searchKey: searchKey);
   }

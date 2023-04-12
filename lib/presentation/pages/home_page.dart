@@ -15,13 +15,13 @@ class HomePage extends GetView<HomeController> {
       appBar: AppBar(
         backgroundColor: Colors.red,
         centerTitle: true,
-        title: Text("News"),
+        title: const Text("News"),
         actions: [
           IconButton(
             onPressed: () {
               _showSearchDialog();
             },
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
           ),
         ],
       ),
@@ -29,11 +29,11 @@ class HomePage extends GetView<HomeController> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 15,
               vertical: 20,
             ),
-            child: Text(
+            child: const Text(
               'List Of Category \nNews Sources',
               style: TextStyle(
                   color: Colors.red, fontWeight: FontWeight.bold, fontSize: 24),
@@ -41,7 +41,7 @@ class HomePage extends GetView<HomeController> {
           ),
           Expanded(
             child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 20,
                   mainAxisSpacing: 20,
@@ -52,12 +52,11 @@ class HomePage extends GetView<HomeController> {
                     onTap: () {
                       Get.toNamed(Routes.SOURCES,
                           arguments: listOfCategory[index]["code"]);
-                      print(listOfCategory[index]["name"]);
                     },
                     child: Obx(() => Container(
                         height: 100,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 5),
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: NetworkImage(
@@ -65,7 +64,7 @@ class HomePage extends GetView<HomeController> {
                                 fit: BoxFit.cover),
                             borderRadius: BorderRadius.circular(20)),
                         child: Text(listOfCategory[index]["name"].toString(),
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white)))));
@@ -95,6 +94,7 @@ class HomePage extends GetView<HomeController> {
         actions: [
           TextButton(
             onPressed: () {
+              controller.searchController.clear();
               Get.back();
             },
             child: const Text(
@@ -103,7 +103,7 @@ class HomePage extends GetView<HomeController> {
             ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 5,
             ),
             decoration: BoxDecoration(

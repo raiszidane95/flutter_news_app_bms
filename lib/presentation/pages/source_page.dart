@@ -6,24 +6,27 @@ import '../../infrastructure/navigation/routes.dart';
 import '../controllers/sources_controller.dart';
 
 class SourcePage extends GetView<SourcesController> {
+  const SourcePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.red,
           centerTitle: true,
-          title: Text("News"),
+          title: const Text("News"),
         ),
         body: Obx(() => Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 15, bottom: 20),
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+                  margin: const EdgeInsets.only(top: 15, bottom: 20),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
                   decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(20)),
-                  child: Text(
+                  child: const Text(
                     'News Source',
                     style: TextStyle(
                         fontSize: 24,
@@ -53,7 +56,7 @@ class SourcePage extends GetView<SourcesController> {
                                     Text(
                                         controller.listSources[index].name
                                             .toString(),
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
                                         )),
@@ -69,7 +72,7 @@ class SourcePage extends GetView<SourcesController> {
                                         .toString(),
                                     maxLines: 5,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                     )),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../domain/core/constants/size_constant.dart';
 import '../controllers/search_result_controller.dart';
 import '../widgets/ViewNews.dart';
 
@@ -13,10 +14,24 @@ class SearchResultPage extends GetView<SearchResultController> {
       appBar: AppBar(
         backgroundColor: Colors.red,
         centerTitle: true,
-        title: Text("News"),
+        title: const Text("News"),
       ),
       body: Column(
         children: [
+          Container(
+            margin: const EdgeInsets.only(top: 15, bottom: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+            decoration: BoxDecoration(
+                color: Colors.red, borderRadius: BorderRadius.circular(20)),
+            child: Text(
+              "Showing result of ${controller.args}",
+              style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+            ),
+          ),
+          GapConstants.gapH15,
           Expanded(
             child: Obx(() => ListView.builder(
                   controller: controller.scrollController,
@@ -36,7 +51,8 @@ class SearchResultPage extends GetView<SearchResultController> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                  margin: EdgeInsets.symmetric(vertical: 10),
+                                  margin:
+                                      const EdgeInsets.symmetric(vertical: 10),
                                   height: Get.height * 0.2,
                                   width: Get.width,
                                   child: Image.network(
@@ -46,10 +62,10 @@ class SearchResultPage extends GetView<SearchResultController> {
                                   )),
                               Text(
                                 controller.listArticle[index].title!,
-                                style: TextStyle(
+                                style: const TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 15,
                               ),
                               Text(controller.listArticle[index].source!.name!),
@@ -62,8 +78,8 @@ class SearchResultPage extends GetView<SearchResultController> {
                 )),
           ),
           Obx(() => controller.isLoading.value
-              ? Center(child: CircularProgressIndicator())
-              : SizedBox.shrink()),
+              ? const Center(child: CircularProgressIndicator())
+              : const SizedBox.shrink()),
         ],
       ),
     );

@@ -11,7 +11,6 @@ class GetNewsUseCase {
     required String sources,
     String? searchKey,
   }) async {
-    print('Print searchKey di usecase : $searchKey');
     return await _newsRepository.getListNews(
         page: page, sources: sources, searchKey: searchKey);
   }

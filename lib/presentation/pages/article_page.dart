@@ -13,7 +13,7 @@ class ArticlePage extends GetView<ArticlesController> {
       appBar: AppBar(
         backgroundColor: Colors.red,
         centerTitle: true,
-        title: Text("News"),
+        title: const Text("News"),
       ),
       body: Column(
         children: [
@@ -37,8 +37,8 @@ class ArticlePage extends GetView<ArticlesController> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
-                                      margin:
-                                          EdgeInsets.symmetric(vertical: 10),
+                                      margin: const EdgeInsets.symmetric(
+                                          vertical: 10),
                                       height: Get.height * 0.2,
                                       width: Get.width,
                                       child: Image.network(
@@ -48,11 +48,11 @@ class ArticlePage extends GetView<ArticlesController> {
                                       )),
                                   Text(
                                     controller.listArticle[index].title!,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 15,
                                   ),
                                   Text(controller
@@ -66,8 +66,8 @@ class ArticlePage extends GetView<ArticlesController> {
                 )),
           ),
           Obx(() => controller.isLoading.value
-              ? Center(child: CircularProgressIndicator())
-              : SizedBox.shrink()),
+              ? const Center(child: CircularProgressIndicator())
+              : const SizedBox.shrink()),
         ],
       ),
     );

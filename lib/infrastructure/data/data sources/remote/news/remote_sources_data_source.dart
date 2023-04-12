@@ -15,17 +15,14 @@ class RemoteSourceDataSource {
     String url = '/top-headlines/sources?';
     url += category == '' ? '' : 'category=$category&';
     url += apiKey;
-    print(url);
     final response = await _connect.get(
       url,
       decoder: (data) => SourcesModel.fromJson(data),
     );
-    print(response);
 
     if (!response.hasError) {
       return response.body!;
     } else {
-      print(response.statusText);
       throw SnackbarUtil.showError(message: response.statusCode.toString());
     }
   }
