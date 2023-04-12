@@ -1,0 +1,32 @@
+{
+    "status": "ok",
+    "totalResults": 38,
+    "articles": [
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Edmonton Journal",
+            "title": "Player grades: Connor McDavid surpasses 150-point plateau as Edmonton Oilers roll to seventh straight win - Edmonton Journal",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMipQFodHRwczovL2VkbW9udG9uam91cm5hbC5jb20vc3BvcnRzL2hvY2tleS9uaGwvY3VsdC1vZi1ob2NrZXkvcGxheWVyLWdyYWRlcy1jb25ub3ItbWNkYXZpZC1zdXJwYXNzZXMtMTUwLXBvaW50LXBsYXRlYXUtYXMtZWRtb250b24tb2lsZXJzLXJvbGwtdG8tc2V2ZW50aC1zdHJhaWdodC13aW7SAdMBaHR0cHM6Ly9lZG1vbnRvbmpvdXJuYWwuY29tL3Nwb3J0cy9ob2NrZXkvbmhsL2N1bHQtb2YtaG9ja2V5L3BsYXllci1ncmFkZXMtY29ubm9yLW1jZGF2aWQtc3VycGFzc2VzLTE1MC1wb2ludC1wbGF0ZWF1LWFzLWVkbW9udG9uLW9pbGVycy1yb2xsLXRvLXNldmVudGgtc3RyYWlnaHQtd2luL3djbS9lYmFjMzY5Zi0xOGVhLTRiZWQtYWU5My1mZWU3MWI2NjMyNTUvYW1wLw?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-04-09T03:39:59Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Edmonton Journal",
+            "title": "Player grades: Connor McDavid surpasses 150-point plateau as Edmonton Oilers roll to seventh straight win - Edmonton Journal",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMipQFodHRwczovL2VkbW9udG9uam91cm5hbC5jb20vc3BvcnRzL2hvY2tleS9uaGwvY3VsdC1vZi1ob2NrZXkvcGxheWVyLWdyYWRlcy1jb25ub3ItbWNkYXZpZC1zdXJwYXNzZXMtMTUwLXBvaW50LXBsYXRlYXUtYXMtZWRtb250b24tb2lsZXJzLXJvbGwtdG8tc2V2ZW50aC1zdHJhaWdodC13aW7SAdMBaHR0cHM6Ly9lZG1vbnRvbmpvdXJuYWwuY29tL3Nwb3J0cy9ob2NrZXkvbmhsL2N1bHQtb2YtaG9ja2V5L3BsYXllci1ncmFkZXMtY29ubm9yLW1jZGF2aWQtc3VycGFzc2VzLTE1MC1wb2ludC1wbGF0ZWF1LWFzLWVkbW9udG9uLW9pbGVycy1yb2xsLXRvLXNldmVudGgtc3RyYWlnaHQtd2luL3djbS9lYmFjMzY5Zi0xOGVhLTRiZWQtYWU5My1mZWU3MWI2NjMyNTUvYW1wLw?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-04-09T03:39:59Z",
+            "content": null
+        }
+    ]
+}
